@@ -4,9 +4,10 @@ c1 <- sample(0:50,50)
 c2 <- sample(0:50,50)
 M1 <- matrix(data=c1,nrow=5,ncol=10)#M1,M2即为满足要求的矩阵
 M2 <- matrix(data=c2,nrow=10,ncol=5)
-
+M1
+M2
 #2.2 定义Matrix_multip函数，计算M1*M2
-c3 <- vector(lenth=25)#用于记录对应行列相乘后的值
+c3 <- vector(length=25)#用于记录对应行列相乘后的值
 Matrix_multip <- function(ma,mb){
   ti=1
   for(k in 1:5 ) {#此处也可将5/5/10修改为输入矩阵对应的行列数
