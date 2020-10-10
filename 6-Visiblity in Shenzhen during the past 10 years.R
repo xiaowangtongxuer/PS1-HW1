@@ -127,12 +127,13 @@ show_day <- function(year,start_day,end_day){ #参数分别是年份，开始天，结束天
       print(paste0('[20km,25km) : ',t5,' days'))
       print(paste0('[25km,30km) : ',t6,' days'))
       print(paste0('[30km,99km) : ',t7,' days'))
+      print(paste0(year,"年能见度大于20km的天数：",t5+t6+t7))
       t1=t2=t3=t4=t5=t6=t7=0
     }
   }
 }
-{
-  show_day(2010,1,364)
+
+  {show_day(2010,1,364)
   show_day(2011,365,729)
   show_day(2012,730,1095)
   show_day(2013,1096,1460)
@@ -142,5 +143,4 @@ show_day <- function(year,start_day,end_day){ #参数分别是年份，开始天，结束天
   show_day(2017,2557,2921)
   show_day(2018,2922,3286)
   show_day(2019,3287,3651)
-  show_day(2020,3652,3906)
-}
+  show_day(2020,3652,3906)}
